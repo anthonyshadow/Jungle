@@ -1,2 +1,17 @@
 <h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<ul class="list-group">
+<li class="list-group-item">
+    <span class="badge"><%= @categories %></span>
+    Categories 
+  </li>  
+<li class="list-group-item">
+    <span class="badge"><%= @products_count %></span>
+    Number Of Products
+  </li>
+  <li class="list-group-item">
+    <span class="badge"><%= @products_sum %></span>
+    Number Of Items Currently In inventory
+  </li>
+</ul>
+
+<a class="btn btn-primary" href="http://localhost:3000/admin/products">Manage Products</a> 
